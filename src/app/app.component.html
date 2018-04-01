@@ -21,19 +21,47 @@
           </nav>
     </header>
     <!-- swapping bs nav-->
-    <ul class="nav nav-tabs" id="myTab" role="tablist">
+    <div class="container-fluid" id="nav-description">
+    <p>
+      this field contains the description of the the below howered field
+    </p>
+    </div>
+  
+    <div class ="container-fluid" id="nav-second">
+      <ul class="nav nav-pills nav-fill">
         <li class="nav-item">
-          <a class="nav-link active" id="home-tab"  role="tab" >Home</a>
+          <a class="nav-link " routerLink="/app-getting-started">Getting Started</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" id="profile-tab"  role="tab">Profile</a>
+            <a class="nav-link " routerLink="/app-all-about">All about</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" id="contact-tab"  role="tab" >Contact</a>
+            <a class="nav-link " routerLink="/app-about">About</a>
         </li>
+       <li class="nav-item">
+            <a class="nav-link " routerLink="/app-contact-us">Contact us</a>
+       </li>
+        
       </ul>
+    </div>
+          <!-- swapping Bs nav-->
+    <!-- progress bar -->
+    <div class="progress" style="height: 10px;">
+        <div class="progress-bar progress-bar-striped progress-bar-animated bg-danger" role="progressbar" style="width: 55%;" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100"></div>
+    </div>
+    <!-- / progress bar / -->
+    <div class="container-fluid">
+      <div class="row">
+          <div class="col-lg-3" id = "first-container">
+              Keep it untouched
+            </div>
+            <div class="col-lg-9" id="second-container">
+              <router-outlet></router-outlet>
+            </div>
+          </div>
+      </div>
+     
       
-      <!-- swapping Bs nav-->
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->

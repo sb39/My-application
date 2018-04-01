@@ -6,12 +6,18 @@ import { ReactiveFormsModule } from "@angular/forms";
 import { RouterModule } from "@angular/router";
 import { AppComponent } from './app.component';
 import { GettingStartedComponent } from './getting-started/getting-started.component';
+import { AllAboutComponent } from './all-about/all-about.component';
+import { AboutComponent } from './about/about.component';
+import { ContactUsComponent } from './contact-us/contact-us.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    GettingStartedComponent
+    GettingStartedComponent,
+    AllAboutComponent,
+    AboutComponent,
+    ContactUsComponent
   ],
   imports: [
     BrowserModule,
@@ -22,6 +28,18 @@ import { GettingStartedComponent } from './getting-started/getting-started.compo
       {
         path : 'app-getting-started',
         component : GettingStartedComponent
+      },
+      {
+        path : 'app-about',
+        component : AboutComponent
+      },
+      {
+        path : 'app-all-about',
+        component : AllAboutComponent
+      },
+      {
+        path : 'app-contact-us',
+        component : ContactUsComponent
       }
     ])
   ],
