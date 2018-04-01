@@ -1,5 +1,42 @@
 header {
   background-color: brown;
   color:white;
-  
+  box-shadow: 0px 20px 10px -15px #111; 
+}
+
+#nav-second {
+  padding:0px 0px 0px 0px;
+  background-color: darkblue;
+  color:white;
+  /*border-top-color: white;
+  border-top-width: 10px;
+  */
+
+}
+#nav-description {padding: 0px 0px 0px 0px;}
+#nav-description p {
+  margin-bottom: 0px;
+  padding:20px;
+  text-align:center;
+  background-color:darkblue;
+  color:white;
+
+}
+
+.nav-link {
+  text-decoration : none;
+  color:white;
+  border-bottom:white 1px solid;
+  border-top:white 1px solid;
+}
+#first-container {
+  background: green;
+}
+#second-container {
+  background: yellow;
+  padding:25px 25px ;
+  display:cover;
+}
+.progress {
+  border-radius:0px ;
 }
