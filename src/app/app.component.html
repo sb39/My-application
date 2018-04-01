@@ -47,7 +47,7 @@
           <!-- swapping Bs nav-->
     <!-- progress bar -->
     <div class="progress" style="height: 10px;">
-        <div class="progress-bar progress-bar-striped progress-bar-animated bg-danger" role="progressbar" style="width: 55%;" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100"></div>
+        <div class="progress-bar progress-bar-striped progress-bar-animated bg-warning" role="progressbar" style="width: 55%;" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100"></div>
     </div>
     <!-- / progress bar / -->
     <div class="container-fluid">
@@ -56,12 +56,156 @@
               Keep it untouched
             </div>
             <div class="col-lg-9" id="second-container">
-              <router-outlet></router-outlet>
+              <div class="jumbotron">
+                <router-outlet></router-outlet>
+              </div>
             </div>
           </div>
       </div>
      
       
+<!--Footer-->
+<footer class="page-footer font-small pt-0">
+
+    <div style="background-color: #6351ce;">
+        <div class="container">
+            <!--Grid row-->
+            <div class="row py-4 d-flex align-items-center">
+
+                <!--Grid column-->
+                <div class="col-md-6 col-lg-5 text-center text-md-left mb-4 mb-md-0">
+                    <h6 class="mb-0 white-text">Get connected with us on social networks!</h6>
+                </div>
+                <!--Grid column-->
+
+                <!--Grid column-->
+                <div class="col-md-6 col-lg-7 text-center text-md-right">
+                    <!--Facebook-->
+                    <a class="fb-ic ml-0">
+                        <i class="fa fa-facebook white-text mr-lg-4"> </i>
+                    </a>
+                    <!--Twitter-->
+                    <a class="tw-ic">
+                        <i class="fa fa-twitter white-text mr-lg-4"> </i>
+                    </a>
+                    <!--Google +-->
+                    <a class="gplus-ic">
+                        <i class="fa fa-google-plus white-text mr-lg-4"> </i>
+                    </a>
+                    <!--Linkedin-->
+                    <a class="li-ic">
+                        <i class="fa fa-linkedin white-text mr-lg-4"> </i>
+                    </a>
+                    <!--Instagram-->
+                    <a class="ins-ic">
+                        <i class="fa fa-instagram white-text mr-lg-4"> </i>
+                    </a>
+                </div>
+                <!--Grid column-->
+
+            </div>
+            <!--Grid row-->
+        </div>
+    </div>
+
+    <!--Footer Links-->
+    <div class="container mt-5 mb-4 text-center text-md-left">
+        <div class="row mt-3">
+
+            <!--First column-->
+            <div class="col-md-3 col-lg-4 col-xl-3 mb-4">
+                <h6 class="text-uppercase font-weight-bold">
+                    <strong>Footer text</strong>
+                </h6>
+                <hr  style="width: 60px;">
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+                  Vero corrupti laborum corporis deleniti a</p>
+                  <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+                      Vero corrupti laborum corporis deleniti a</p>
+            </div>
+            <!--/.First column-->
+
+            <!--Second column-->
+            <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+                <h6 class="text-uppercase font-weight-bold">
+                    <strong>Page navigation</strong>
+                </h6>
+                <hr  style="width: 60px;">
+                <p>
+                  <a routerLink="/">Home</a>
+                </p>
+                <p>
+                    <a routerLink="/app-getting-started">Getting started</a>
+                </p>
+                <p>
+                    <a routerLink="/app-all-about">All About</a>
+                </p>
+                <p>
+                    <a routerLink="/app-about">About</a>
+                </p>
+                <p>
+                    <a routerLink="/app-contact-us">Contact Us</a>
+                </p>
+            </div>
+            <!--/.Second column-->
+
+            <!--Third column-->
+            <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+                <h6 class="text-uppercase font-weight-bold">
+                    <strong>Social links</strong>
+                </h6>
+                <hr  style="width: 60px;">
+                <p>
+                    <a href="#!">Facebook</a>
+                </p>
+                <p>
+                    <a href="#!">Twitter</a>
+                </p>
+                <p>
+                    <a href="#!">Linkedin</a>
+                </p>
+                <p>
+                    <a href="#!">Github</a>
+                </p>
+                <p>
+                  <a href="#!">Google Plus</a>
+                </p>
+            </div>
+            <!--/.Third column-->
+
+            <!--Fourth column-->
+            <div class="col-md-4 col-lg-3 col-xl-3">
+                <h6 class="text-uppercase font-weight-bold">
+                    <strong>Mail Us at</strong>
+                </h6>
+                <hr  style="width: 60px;">
+                <p>
+                    <i class="fa fa-home mr-3"></i> India, india, india, india</p>
+                <p>
+                    <i class="fa fa-envelope mr-3"></i> india@foo.com</p>
+                <p>
+                    <i class="fa fa-phone mr-3"></i> + 91 65551 14422</p>
+                <p>
+                    <i class="fa fa-print mr-3"></i> + 91 65551 14422</p>
+            </div>
+            <!--/.Fourth column-->
+
+        </div>
+    </div>
+    <!--/.Footer Links-->
+
+    <!-- Copyright-->
+    <div class="footer-copyright py-3 text-center" id="footer-in-footer">
+        © 2018 Copyright:
+        <a href="https://mdbootstrap.com/material-design-for-bootstrap/">
+            <strong> Copyright holder.com</strong>
+        </a>
+    </div>
+    <!--/.Copyright -->
+
+</footer>
+<!--/.Footer-->
+                      
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
