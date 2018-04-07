@@ -1,0 +1,225 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <!-- Faa Icons -->
+    <!--link rel="stylesheet" href="./fontawesome.min.css"-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.9/css/all.css" integrity="sha384-5SOiIsAziJl6AWe0HWRKTXlfcSHKmYV4RBF18PPJ173Kzn7jzMyFuTtk8JA7QQG1" crossorigin="anonymous">
+    <!--title>Hello, world!</title-->
+
+  </head>
+  
+  <body>
+    <!-- Image and text -->
+    <header>
+        <nav class="navbar justify-content-center">
+            <a class="navbar-brand" href="#" style="color:white;">
+              <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/SVG_Logo.svg/2000px-SVG_Logo.svg.png" width="30" height="30" class="d-inline-block align-top" alt="nav_image">
+              My Application
+            </a>
+          </nav>
+    </header>
+    <!-- swapping bs nav-->
+    <div class="container-fluid" id="nav-description">
+    <p>
+      this field contains the description of the the below howered field <i class="fas fa-user"></i>
+    </p>
+    </div>
+  
+    <div class ="container-fluid" id="nav-second" >
+        <div class="container-fluid" class=col-md-6>
+      <ul class="nav nav-pills nav-fill" >
+        <li class="nav-item">
+          <a class="nav-link " routerLink="/app-getting-started">Getting Started</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link " routerLink="/app-all-about">All about</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link " routerLink="/app-about">About</a>
+        </li>
+       <li class="nav-item">
+            <a class="nav-link " routerLink="/app-contact-us">Contact us</a>
+       </li>
+        
+      </ul>
+    </div>
+    </div>
+          <!-- swapping Bs nav-->
+
+<!-- progress bar silenced here -->
+
+    <!-- progress bar -->
+    <!--div class="progress" style="height: 10px;">
+        <div class="progress-bar progress-bar-striped progress-bar-animated bg-info" role="progressbar" style="width: 55%;" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100"></div>
+    </div-->
+    <!-- / progress bar / -->
+    <div class="container-fluid">
+      <div class="row">
+          <div class="col-sm-1" id = "first-container">
+              facicons here ///
+            </div>
+            <div class="col-lg-11" id="second-container">
+              <div class="jumbotron">
+                <router-outlet></router-outlet>
+              </div>
+            </div>
+          </div>
+      </div>
+     
+      
+<!--Footer-->
+<footer class="page-footer font-small pt-0">
+
+    <div style="background-color:#161C27">
+        <div class="container">
+            <!--Grid row-->
+            <div class="row py-4 d-flex align-items-center">
+
+                <!--Grid column-->
+                <div class="col-md-6 col-lg-5 text-center text-md-left mb-4 mb-md-0">
+                    <h6 class="mb-0 white-text">Get connected with us on social networks!</h6>
+                </div>
+                <!--Grid column-->
+
+                <!--Grid column-->
+                <div class="col-md-6 col-lg-7 text-center text-md-right">
+                    <!--Facebook-->
+                    <a class="fb-ic ml-0" href="https://www.facebook.com/srijeet.b">
+                        <i class="fab fa-facebook-square white-text mr-lg-4"></i>
+                    </a>
+                    <!--Twitter-->
+                    <a class="tw-ic" href="https://twitter.com/biswas_srijeet">
+                        <i class="fab fa-twitter white-text mr-lg-4"> </i>
+                    </a>
+                    <!--Google +-->
+                    <a class="gplus-ic" href="https://plus.google.com/u/0/+srijeetbiswas">
+                        <i class="fab fa-google-plus white-text mr-lg-4"> </i>
+                    </a>
+                    <!--Linkedin-->
+                    <a class="li-ic" href="https://www.linkedin.com/in/srijeet-biswas/">
+                        <i class="fab fa-linkedin white-text mr-lg-4"> </i>
+                    </a>
+                    <!--Instagram-->
+                    <a class="ins-ic" href="https://github.com/sb39">
+                        <i class="fab fa-github white-text mr-lg-4"> </i>
+                    </a>
+                </div>
+                <!--Grid column-->
+
+            </div>
+            <!--Grid row-->
+        </div>
+    </div>
+
+    <!--Footer Links-->
+    <div class="container  text-center text-md-left" id="footer-container">
+        <div class="row mt-3">
+
+            <!--First column-->
+            <div class="col-md-3 col-lg-4 col-xl-3 mb-4">
+                <h6 class="text-uppercase font-weight-bold">
+                    <strong>Footer text</strong>
+                </h6>
+                <hr  style="width: 60px;">
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+                  Vero corrupti laborum corporis deleniti a</p>
+                  <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+                      Vero corrupti laborum corporis deleniti a</p>
+            </div>
+            <!--/.First column-->
+
+            <!--Second column-->
+            <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+                <h6 class="text-uppercase font-weight-bold">
+                    <strong>Page navigation</strong>
+                </h6>
+                <hr  style="width: 60px;">
+                <p>
+                  <a routerLink="/">Home</a>
+                </p>
+                <p>
+                    <a routerLink="/app-getting-started">Getting started</a>
+                </p>
+                <p>
+                    <a routerLink="/app-all-about">All About</a>
+                </p>
+                <p>
+                    <a routerLink="/app-about">About</a>
+                </p>
+                <p>
+                    <a routerLink="/app-contact-us">Contact Us</a>
+                </p>
+            </div>
+            <!--/.Second column-->
+
+            <!--Third column-->
+            <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+                <h6 class="text-uppercase font-weight-bold">
+                    <strong>Social links</strong>
+                </h6>
+                <hr  style="width: 60px;">
+                <p>
+                    <a href="https://www.facebook.com/srijeet.b">Facebook</a>
+                </p>
+                <p>
+                    <a href="https://twitter.com/biswas_srijeet">Twitter</a>
+                </p>
+                <p>
+                    <a href="https://www.linkedin.com/in/srijeet-biswas/">Linkedin</a>
+                </p>
+                <p>
+                    <a href="https://github.com/sb39">Github</a>
+                </p>
+                <p>
+                  <a href="https://plus.google.com/u/0/+srijeetbiswas">Google Plus</a>
+                </p>
+            </div>
+            <!--/.Third column-->
+
+            <!--Fourth column-->
+            <div class="col-md-4 col-lg-3 col-xl-3">
+                <h6 class="text-uppercase font-weight-bold">
+                    <strong>Mail Us at</strong>
+                </h6>
+                <hr  style="width: 60px;">
+                <p>
+                    <i class="fa fa-home mr-3"></i> India, india, india, india</p>
+                <p>
+                    <i class="fa fa-envelope mr-3" ></i> india@foo.com</p>
+                <p>
+                    <i class="fa fa-phone mr-3"></i> + 91 65551 14422</p>
+                <p>
+                    <i class="fa fa-print mr-3"></i> + 91 65551 14422</p>
+            </div>
+            <!--/.Fourth column-->
+
+        </div>
+    </div>
+    <!--/.Footer Links-->
+
+    <!-- Copyright-->
+    <div class="footer-copyright py-3 text-center" id="footer-in-footer">
+        © 2018 Copyright:
+        <a href="https://mdbootstrap.com/material-design-for-bootstrap/">
+            <strong> Copyright holder.com</strong>
+        </a>
+    </div>
+    <!--/.Copyright -->
+
+</footer>
+<!--/.Footer-->
+                      
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  </body>
+</html>
