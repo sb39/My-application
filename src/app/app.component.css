@@ -29,7 +29,7 @@ header a{
 }
 .nav-pills .nav-link:hover:after { transform: scaleX(1); }
 
-#nav-description {padding: 0px 0px 0px 0px;}
+#nav-description {padding: 0px 0px 0px 0px;margin-top:56px;}
 #nav-description p {
   margin-bottom: 0px;
   padding:20px;

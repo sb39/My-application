@@ -1,3 +1,34 @@
 html,body {
     background-color: inherit;
+    text-align:center !important;
+
     }
+.header{
+    background: url('https://www.hpe.com/content/dam/hpe/insights/articles/2017/07/how-to-build-a-more-effective-workplace/featuredStory/iStock-502255964_2000x1081.jpg.transform/nxt-1043x496-crop/image.jpeg') no-repeat fixed center;
+    height:100%;
+    width:100%;
+    color:white;
+    padding:100px;
+    margin-left:66px;
+    margin-right: 66px;
+    
+}
+.hr1{background-color:inherit;width:60%;}
+.hr2{background-color:white;width:40%;}
+#col1 {
+    padding:20px;
+    background-color:#3F51B5 ;
+    color:white;
+    font-family: 'Do Hyeon', sans-serif;
+}
+#col2{
+    padding:20px;
+    background-color:#3F51B5;
+    color:white;
+    font-family: 'Do Hyeon', sans-serif;
+}
+.row{
+    margin-left:66px;
+    margin-right:66px;
+    border-radius:21px; 
+}
