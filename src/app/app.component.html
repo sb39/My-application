@@ -5,19 +5,37 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <!-- Faa Icons -->
     <!--link rel="stylesheet" href="./fontawesome.min.css"-->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.9/css/all.css" integrity="sha384-5SOiIsAziJl6AWe0HWRKTXlfcSHKmYV4RBF18PPJ173Kzn7jzMyFuTtk8JA7QQG1" crossorigin="anonymous">
     <!--title>Hello, world!</title-->
+    <!--scroll js script-->
+    <script>
+       window.onscroll = function() {myFunction()};
 
+        function myFunction() {
+            if (document.body.scrollTop > 1 || document.documentElement.scrollTop > 50) {
+               $('nav-description').css('visibility','none');
+            } else {
+              $('nav-description').css('visibility','visible');
+            }
+        }
+    </script>
+    <style>
+    .test {
+            margin-top:-56px
+        }</style>
+    <!--/scroll js script/-->
   </head>
   
   <body>
     <!-- Image and text -->
     <header>
-        <nav class="navbar justify-content-center">
+        <nav class="navbar bg-light fixed-top justify-content-center">
             <a class="navbar-brand" href="#" style="color:white;">
               <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/SVG_Logo.svg/2000px-SVG_Logo.svg.png" width="30" height="30" class="d-inline-block align-top" alt="nav_image">
               My Application
