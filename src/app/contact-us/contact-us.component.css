@@ -1,8 +1,35 @@
-html,body {
-    background-color: inherit;
-    }
+body{
+    background-color:inherit;
+    text-align:center !important;
+    
+}
+.header {
+    background: url('http://www.dawnbit.com/wp-content/uploads/2017/07/contact.jpg') no-repeat fixed center;
+    height:auto;
+    width:100%;
+    color:white;
+    padding: 100px 10px 100px 10px;
+}
+.col-md-4 {
+    padding:0px;
+    align-content: center;
+}
+#cards {
+   padding-top:20px;
+   padding-left:80px;
+   padding-right:0px;
+   padding-bottom:20px;
+}
+#map{
+    margin-right:0px;
+    margin-left:0px;
+}
+.card-img-top{
+    width:65%;
+    height:auto;
+    align-self:center;
 
-main {
-   
-
+}
+#contact-details{
+    padding: 10px 10px 10px 10px ;
 }
