@@ -9,7 +9,7 @@ import { GettingStartedComponent } from './getting-started/getting-started.compo
 import { AllAboutComponent } from './all-about/all-about.component';
 import { AboutComponent } from './about/about.component';
 import { ContactUsComponent } from './contact-us/contact-us.component';
-
+import { PopupModule } from '@angular/ng2-opd-popup';
 
 @NgModule({
   declarations: [
@@ -41,8 +41,10 @@ import { ContactUsComponent } from './contact-us/contact-us.component';
         path : 'app-contact-us',
         component : ContactUsComponent
       }
-    ])
+    ]),
+    PopupModule.forRoot(),
   ],
+  
   providers: [],
   bootstrap: [AppComponent]
 })
