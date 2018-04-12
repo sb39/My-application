@@ -28,7 +28,8 @@
                    <div class="card-body">
                      <h5 class="card-title">Sales Enquiry</h5>
                      <p class="card-text">All your sales related Queriries, Feel free to reach us .</p>
-                     <a href="_blank" class="btn btn-danger">Submit your query</a>
+                     <button type="button" class="btn btn-danger" (click)="openModal(template)">Submit your query</button>
+                     
                    <!--popup-->
                   
                    <!--/popup/-->
@@ -41,7 +42,8 @@
                    <div class="card-body">
                      <h5 class="card-title">Write to us / Feedback</h5>
                      <p class="card-text">Your feedback is valuable to us, Submit here.</p>
-                     <a href="_blank" class="btn btn-success">Feedback form </a>
+                     <button type="button" class="btn btn-danger" (click)="openModal(template)">Feedback Form</button>
+                     
                    </div>
                  </div>
             </div>
@@ -51,13 +53,59 @@
                    <div class="card-body">
                      <h5 class="card-title">Talk with us, Live</h5>
                      <p class="card-text">Live Chat link here, Click the button </p>
-                     <a href="_blank" class="btn btn-danger">Live Chat</a>
+                     <button type="button" class="btn btn-danger" (click)="openModal(template)">Live Chat</button>
+
                    </div>
                  </div>
             </div>
           </div>
     </div>
+    <div class="row">
+ <!-- modal template -->
+        <ng-template #template>
+          <div class="modal-header">
+            <h4 class="modal-title pull-left">Modal</h4>
+            <button type="button" class="close pull-right" aria-label="Close" (click)="modalRef.hide()">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="container-fluid">
+                <div class="row">
+                    <form class="col-md-12">
+                        <div class="form-group">
+                          <label for="exampleFormControlInput1">Email address</label>
+                          <input type="email" class="form-control form-control-lg" id="exampleFormControlInput1" placeholder="name@example.com">
+                        </div>
+                        <div class="form-group">
+                          <label for="exampleFormControlSelect1">Query option</label>
+                          <select class="form-control form-control-lg" id="exampleFormControlSelect1">
+                            <option>option 1</option>
+                            <option>option 2</option>
+                            <option>option 3</option>
+                            <option>option 4</option>
+                            <option>option 5</option>
+                          </select>
+                        </div>
+                        
+                        <div class="form-group">
+                          <label for="exampleFormControlTextarea1">Description</label>
+                          <textarea class="form-control form-control-lg" id="exampleFormControlTextarea1" rows="3"></textarea>
+                        </div>
+                        <div class="form-group">
+                            <button type="submit" class="btn btn-success">Submit</button>
+                            <button type="submit" class="btn btn-danger">Reset</button>
+                        </div>
+                        
 
+                      </form>
+                 </div>
+            </div>
+           
+          </div>
+        </ng-template>
+  <!-- / modal template / -->
+    </div>
      <div class="container-fluid " >
         <div class="row" id="map">
             <div class="mapouter"><div class="gmap_canvas"><iframe width="1080" height="429" id="gmap_canvas" src="https://maps.google.com/maps?q=nyc&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe></div><a href="https://www.crocothemes.net">wordpress themes</a><style>.mapouter{overflow:hidden;height:429px;width:1080px;}.gmap_canvas {background:none!important;height:auto;width:1080px;}</style></div>
