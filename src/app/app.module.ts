@@ -9,6 +9,8 @@ import { GettingStartedComponent } from './getting-started/getting-started.compo
 import { AllAboutComponent } from './all-about/all-about.component';
 import { AboutComponent } from './about/about.component';
 import { ContactUsComponent } from './contact-us/contact-us.component';
+import { AlertModule } from 'ngx-bootstrap';
+import { ModalModule } from 'ngx-bootstrap/modal';
 
 @NgModule({
   declarations: [
@@ -16,9 +18,10 @@ import { ContactUsComponent } from './contact-us/contact-us.component';
     GettingStartedComponent,
     AllAboutComponent,
     AboutComponent,
-    ContactUsComponent
+    ContactUsComponent,
   ],
   imports: [
+    ModalModule.forRoot(),
     BrowserModule,
     FormsModule,
     HttpModule,
@@ -41,6 +44,8 @@ import { ContactUsComponent } from './contact-us/contact-us.component';
         component : ContactUsComponent
       }
     ]),
+   AlertModule.forRoot(),
+
   ],
   
   providers: [],

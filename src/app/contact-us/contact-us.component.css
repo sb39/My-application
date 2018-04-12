@@ -33,3 +33,9 @@ body{
 #contact-details{
     padding: 10px 10px 10px 10px ;
 }
+.modal-body{
+    padding:0px 0px 0px 0px;
+    align-self:center;
+    padding:15px;
+    
+}
